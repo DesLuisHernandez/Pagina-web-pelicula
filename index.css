@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    width: 1920px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 60px; /* Ajusta este valor según la altura del navbar */
+}
+
+/* Navbar */
+#navbar {
+    width: 1920px;
+    background-color: #8B5E3C;
+    padding: 12px;
+    position: fixed; /* Esto hace que el navbar quede fijo */
+    top: 0; /* Se coloca en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    z-index: 1000; /* Asegura que el navbar quede por encima de otros contenidos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    transition: background-color 0.3s ease-in-out;
+}
+
+#navbar nav {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    width: 100%;
+}
+
+.logo-container {
+    flex-shrink: 0;
+}
+
+#logo {
+    width: 120px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1; /* Ocupa el espacio restante */
+    justify-content: center; /* Centra los enlaces */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Carrusel */
+#carrusel {
+    background-color: #f2f2f2;
+    padding: 20px 0; /* Espacio arriba y abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.carousel-item {
+    margin: 0 15px;
+    width: 100%;
+}
+
+/* Asegura que el carrusel cubra todo el ancho */
+#carouselExample {
+    width: 1920px; 
+    margin: 0 auto; /* Centra el carrusel */
+}
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    border-radius: 50%; /* Hace los botones circulares */
+    padding: 10px; /* Aumenta el tamaño del botón */
+}
+
+/* Sinopsis */
+#sinopsis {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#sinopsis h2 {
+    font-size: 24px;
+}
+
+/* Galería */
+#galeria {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#contacto button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+#footer {
+    background-color: #8B5E3C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
